@@ -1,0 +1,3 @@
+DROP TABLE dbo.Client
+DROP TABLE dbo.Orders
+DROP TABLE dbo.flyway_schema_history
