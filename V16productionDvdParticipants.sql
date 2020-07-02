@@ -8,4 +8,6 @@ GO
 CREATE TABLE production.DvdParticipants
 (
     DvdParID SMALLINT IDENTITY(1,1) NOT NULL PRIMARY KEY,
+    DvdParParticipant INTEGER NOT NULL,
 )
+

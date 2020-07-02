@@ -42,7 +42,7 @@ Create a functional database for a fictional store that rents DVDs. The main obj
 
 ### ER diagram: to see the relation between entities and attributes, additional document with detail is attached: datadictionary.xls
 
-![](https://raw.githubusercontent.com/lucasnapolilapenda/Pics/master/Mobile/DVDDiagram.png)
+![](https://raw.githubusercontent.com/lucasnapolilapenda/Pics/master/Mobile/DVDDiagram2.png)
 
 ## Additional Comments
 1) To manage the DVDs two tables were created: DVD and DVDabs. Basically, these tables are two manage the DVD abstraction (catalog - Production.DVDAbs-) and real physical DVD (Production.DVD). 
