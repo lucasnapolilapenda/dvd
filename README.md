@@ -2,7 +2,7 @@
 
 ![N|](https://www.mcgill.ca/research-jobs/sites/all/themes/moriarty/images/logo-red.svg)
 
-CCCS 330-784 Data Bases |
+CCCS 330-784 Data Bases | Business Applications
 Professor: Khattar Daou Student: Development: MovinOn
 Student: Lucas Napoli / Phillip Spencer-Boucher 
 Development: DVD rentals database
