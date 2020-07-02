@@ -54,10 +54,10 @@ Create a functional database for a fictional store that rents DVDs. The main obj
 ## Additional Comments
 1) To manage the DVDs two tables were created: DVD and DVDabs. Basically, these tables will manage the DVD abstraction (catalog - Production.DVDAbs-) and real physical DVD (Production.DVD). 
 2) All Scripts where organized in the following way:
-a) Database Creation (In our case we tested all the scripts in a pre-created Azure Database )
-b) Schema Creation based on the scripts presented in class
-c) Tables creation
-d) Foreign Key creation: i) Additional columns creation, ii) Constraints generation. We separated this phase to create the tables before implementing all the FK and columns/fields related to the FK  
+- Database Creation (In our case we tested all the scripts in a pre-created Azure Database )
+- Schema Creation based on the scripts presented in class
+- Tables creation
+- Foreign Key creation: i) Additional columns creation, ii) Constraints generation. We separated this phase to create the tables before implementing all the FK and columns/fields related to the FK  
 
 
 License
