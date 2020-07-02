@@ -1,0 +1,14 @@
+/***** Table DVDabs *****/
+IF OBJECT_ID('dbo.Dvdabs', 'U') is not NULL
+DROP TABLE dbo.DvdAAbs
+;
+GO
+
+/***** Table DVDabs Creation *****/
+CREATE TABLE dbo.Dvsabs
+(
+    DVDAID SMALLINT IDENTITY(1,1) NOT NULL PRIMARY KEY,
+    DVDAName NVARCHAR(20) NOT NULL,
+    DVDANdiscs INTEGER NOT NULL,
+    DVDADate DATE NOT NULL,
+)

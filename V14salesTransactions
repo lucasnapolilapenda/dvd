@@ -1,0 +1,12 @@
+/***** Table Transactions *****/
+IF OBJECT_ID('dbo.Transactions', 'U') is not NULL
+DROP TABLE dbo.Transactions
+;
+GO
+
+/***** Table Transactions Creation *****/
+CREATE TABLE dbo.Transactions
+(
+    TranID SMALLINT IDENTITY(1,1) NOT NULL PRIMARY KEY,
+    TranDeleted BIT NOT NULL,
+)

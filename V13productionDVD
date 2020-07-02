@@ -1,0 +1,11 @@
+/***** Table DVD *****/
+IF OBJECT_ID('dbo.Dvd', 'U') is not NULL
+DROP TABLE dbo.Dvd
+;
+GO
+
+/***** Table DVD Creation *****/
+CREATE TABLE dbo.Dvd
+(
+    DvdID SMALLINT IDENTITY(1,1) NOT NULL PRIMARY KEY,
+)

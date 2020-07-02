@@ -9,7 +9,7 @@ context of the master database */
 
 -- switch to the master database
 -- SYNTAX: use database_name
-use KDFlix2020
+use LucasDBTS
 ;
 go -- includes end of batch markers (go statement)
 

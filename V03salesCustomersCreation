@@ -1,11 +1,11 @@
-/***** Table Sales.customers *****/
-IF OBJECT_ID('dbo.Customers', 'U') is not NULL
+/***** Table Customers *****/
+IF OBJECT_ID('Sales.Customers', 'U') is not NULL
 DROP TABLE Sales.Customers
 ;
 GO
 
-/***** Table Sales.customers Creation *****/
-CREATE TABLE dbo.Customers
+/***** Table customers Creation *****/
+CREATE TABLE Sales.Customers
 (
     CustID SMALLINT IDENTITY(1,1) NOT NULL PRIMARY KEY,
     CustFN NVARCHAR(20) NOT NULL,
@@ -23,4 +23,5 @@ CREATE TABLE dbo.Customers
     CustStatus NVARCHAR(6) NOT NULL,
     CustDeleted BIT NOT NULL,
 )
+
 
