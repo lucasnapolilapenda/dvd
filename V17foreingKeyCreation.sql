@@ -67,5 +67,65 @@ ALTER TABLE production.Dvdabs
 ;
 GO
 
+/***** Adding FK to DVD *****/
+
+ALTER TABLE production.Dvd
+   ADD DvdAbsID SMALLINT NOT NULL
+;
+GO
+
+ALTER TABLE production.Dvd
+   ADD CONSTRAINT FK_DvdAbs FOREIGN KEY (DvdAbsID)
+   REFERENCES production.Dvdabs(DvdaID)
+;
+GO
+
+/***** Adding FK to Transactions *****/
+
+ALTER TABLE sales.Transactions
+   ADD DvdID SMALLINT NOT NULL,
+   OrderID SMALLINT NOT NULL
+;
+GO
+
+ALTER TABLE sales.Transactions
+   ADD CONSTRAINT FK_Dvd FOREIGN KEY (DvdID)
+   REFERENCES production.Dvd(DvdID)
+;
+GO
+
+ALTER TABLE sales.Transactions
+   ADD CONSTRAINT FK_Order FOREIGN KEY (OrderID)
+   REFERENCES sales.Orders(OrID)
+;
+GO
+
+/***** Adding FK to Order *****/
+
+ALTER TABLE sales.Orders
+   ADD CusID SMALLINT NOT NULL,
+   EmpID SMALLINT NOT NULL,
+   TraID SMALLINT NOT NULL
+;
+GO
+
+ALTER TABLE sales.Orders
+   ADD CONSTRAINT FK_Customer FOREIGN KEY (CusID)
+   REFERENCES Sales.Customers(CustID)
+;
+GO
+
+ALTER TABLE sales.Orders
+   ADD CONSTRAINT FK_Employees FOREIGN KEY (EmpID)
+   REFERENCES HumanResources.Employees(EmpID)
+;
+GO
+
+
+ALTER TABLE sales.Orders
+   ADD CONSTRAINT FK_Transactions FOREIGN KEY (TraID)
+   REFERENCES sales.Transactions(TranID)
+;
+GO
 
 
