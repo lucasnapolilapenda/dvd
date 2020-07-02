@@ -1,11 +1,11 @@
 /***** Table DvdParticipants *****/
-IF OBJECT_ID('dbo.DvdParticipants', 'U') is not NULL
-DROP TABLE dbo.DvdParticipants
+IF OBJECT_ID('production.DvdParticipants', 'U') is not NULL
+DROP TABLE production.DvdParticipants
 ;
 GO
 
 /***** Table Orders DvdParticipants *****/
-CREATE TABLE dbo.DvdParticipants
+CREATE TABLE production.DvdParticipants
 (
     DvdParID SMALLINT IDENTITY(1,1) NOT NULL PRIMARY KEY,
 )

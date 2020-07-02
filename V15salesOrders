@@ -1,11 +1,11 @@
 /***** Table Orders *****/
-IF OBJECT_ID('dbo.Orders', 'U') is not NULL
-DROP TABLE dbo.Orders
+IF OBJECT_ID('sales.Orders', 'U') is not NULL
+DROP TABLE sales.Orders
 ;
 GO
 
 /***** Table Orders Creation *****/
-CREATE TABLE dbo.Orders
+CREATE TABLE sales.Orders
 (
     OrID SMALLINT IDENTITY(1,1) NOT NULL PRIMARY KEY,
     OrDate DATE NOT NULL,

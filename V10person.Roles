@@ -1,14 +1,13 @@
-/***** Table DVDabs *****/
-IF OBJECT_ID('dbo.Dvdabs', 'U') is not NULL
-DROP TABLE dbo.DvdAAbs
+/***** Table Roles *****/
+IF OBJECT_ID('person.Roles', 'U') is not NULL
+DROP TABLE person.Roles
 ;
 GO
 
-/***** Table DVDabs Creation *****/
-CREATE TABLE dbo.Dvsabs
+/***** Table Roles Creation *****/
+CREATE TABLE person.Roles
 (
-    DVDAID SMALLINT IDENTITY(1,1) NOT NULL PRIMARY KEY,
-    DVDAName NVARCHAR(20) NOT NULL,
-    DVDANdiscs INTEGER NOT NULL,
-    DVDADate DATE NOT NULL,
+    RolID SMALLINT IDENTITY(1,1) NOT NULL PRIMARY KEY,
+    RolValue NVARCHAR(20) NOT NULL,
+
 )
