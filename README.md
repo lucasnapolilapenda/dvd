@@ -11,7 +11,7 @@ Development: DVD rentals database
 1) Steps described in the message body
 2) ER diagram embedded in the assignment body
 3) SQL scripts (Entire project can be opened in Visual Studio Code)
-Attached .zip / or you can download the project in: 
+Attached .zip / or you can download the project in: https://github.com/lucasnapolilapenda/dvd
    
 
 # Steps:
